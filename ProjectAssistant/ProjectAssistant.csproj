@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5640655-1E87-4335-BD7E-4C11387D1BAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectAssistant</RootNamespace>
+    <AssemblyName>ProjectAssistant</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>assistant_icone_96x96.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ApplicationActions">
+      <HintPath>..\Components\ApplicationActions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\Components\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="FwxAsyncClient">
+      <HintPath>..\Components\FwxAsyncClient.dll</HintPath>
+    </Reference>
+    <Reference Include="FwxAsyncConvert">
+      <HintPath>..\Components\FwxAsyncConvert.dll</HintPath>
+    </Reference>
+    <Reference Include="FwxAsyncCore">
+      <HintPath>..\Components\FwxAsyncCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GwxConfigCore">
+      <HintPath>..\Components\GwxConfigCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GwxControls">
+      <HintPath>..\Components\GwxControls.dll</HintPath>
+    </Reference>
+    <Reference Include="GwxRuntimeCore">
+      <HintPath>..\Components\GwxRuntimeCore.dll</HintPath>
+    </Reference>
+    <Reference Include="GwxRuntimeCoreCommands">
+      <HintPath>..\Components\GwxRuntimeCoreCommands.dll</HintPath>
+    </Reference>
+    <Reference Include="GwxRuntimeViewControl">
+      <HintPath>..\Components\GwxRuntimeViewControl.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoAboutBox">
+      <HintPath>..\Components\IcoAboutBox.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoCarousel">
+      <HintPath>..\Components\IcoCarousel.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoCollections">
+      <HintPath>..\Components\IcoCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoColorPalette">
+      <HintPath>..\Components\IcoColorPalette.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoCommanding">
+      <HintPath>..\Components\IcoCommanding.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoCommandingSpecialized">
+      <HintPath>..\Components\IcoCommandingSpecialized.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoCommandManager">
+      <HintPath>..\Components\IcoCommandManager.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoCommands">
+      <HintPath>..\Components\IcoCommands.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoComponentModel">
+      <HintPath>..\Components\IcoComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoComponentModelDesign">
+      <HintPath>..\Components\IcoComponentModelDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoConfigurationSettings">
+      <HintPath>..\Components\IcoConfigurationSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoDataAlias">
+      <HintPath>..\Components\IcoDataAlias.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoDataClient">
+      <HintPath>..\Components\IcoDataClient.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoDotNetBar">
+      <HintPath>..\Components\IcoDotNetBar.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoExpressionEvaluator">
+      <HintPath>..\Components\IcoExpressionEvaluator.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoFwxClientWrapper">
+      <HintPath>..\Components\IcoFwxClientWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoFwxUaClient">
+      <HintPath>..\Components\IcoFwxUaClient.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoFwxUaCommon">
+      <HintPath>..\Components\IcoFwxUaCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoFwxUtils">
+      <HintPath>..\Components\IcoFwxUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoKeyPad">
+      <HintPath>..\Components\IcoKeyPad.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoNuiLibrary">
+      <HintPath>..\Components\IcoNuiLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoOemInfo">
+      <HintPath>..\Components\IcoOemInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoOemInfoResources">
+      <HintPath>..\Components\IcoOemInfoResources.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoScriptEngine">
+      <HintPath>..\Components\IcoScriptEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoSecurityCryptography">
+      <HintPath>..\Components\IcoSecurityCryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoSecurityLogin">
+      <HintPath>..\Components\IcoSecurityLogin.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoSimulation">
+      <HintPath>..\Components\IcoSimulation.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoTrace">
+      <HintPath>..\Components\IcoTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoWindowsForms">
+      <HintPath>..\Components\IcoWindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoWindowsFormsSpecialized">
+      <HintPath>..\Components\IcoWindowsFormsSpecialized.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoWPF">
+      <HintPath>..\Components\IcoWPF.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoWPFAdvanced">
+      <HintPath>..\Components\IcoWPFAdvanced.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoWPFDesign">
+      <HintPath>..\Components\IcoWPFDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoWPFTransitions">
+      <HintPath>..\Components\IcoWPFTransitions.dll</HintPath>
+    </Reference>
+    <Reference Include="IcoXML">
+      <HintPath>..\Components\IcoXML.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect">
+      <HintPath>..\Components\Microsoft.Kinect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect.Toolkit.Interaction">
+      <HintPath>..\Components\Microsoft.Kinect.Toolkit.Interaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Speech">
+      <HintPath>..\Components\Microsoft.Speech.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\Components\Opc.Ua.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ProjectAssistant.vshost, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Release\ProjectAssistant.vshost.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="Xceed.Wpf.Controls">
+      <HintPath>..\Components\Xceed.Wpf.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid">
+      <HintPath>..\Components\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.DataGrid.Views3D">
+      <HintPath>..\Components\Xceed.Wpf.DataGrid.Views3D.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cBuildPP.cs" />
+    <Compile Include="cExcel.cs" />
+    <Compile Include="cSound.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="cSQLBases.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assistant_icone_96x96.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
